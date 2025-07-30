@@ -449,3 +449,7 @@ footer {
   text-align: center;
   opacity: 0.8;
 }
+
+.footer-main-content-child-2 p {
+  font-size: 0.9rem;
+}
