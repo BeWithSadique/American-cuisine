@@ -2,6 +2,13 @@
 
 Welcome to the **American Cuisine** project! This website showcases popular and iconic American food dishes with beautiful imagery, descriptions, and pricing.
 
+## 📸 Project Preview
+
+![Homepage Screenshot](./images/screenshot-home.png)
+
+> This is the landing page of the American Cuisine website showcasing the top dishes.
+
+
 ## 🌟 Live Demo
 
 Check out the live website here: [https://bewithsadique.github.io/American-cuisine/](https://bewithsadique.github.io/American-cuisine/)
