@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>American cuisine</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!--header-->
+    <div class="header">
+      <div class="header-content">
+        <div class="logo"> American cuisine</div>
+        <div class="header-info">
+          <h2>Fresh  American cuisine</h2>
+          <p>Order Online • Free Delivery • 30-45 min</p>
+        </div>
+        <div class="cart-icon" onclick="toggleCart()">
+          <i class="fas fa-shopping-cart"></i>
+          <div class="cart-count" id="cart-count">0</div>
+        </div>
+      </div>
+    </div>
+    <!--main-container-section-->
+    <div class="main-container">
+      <div class="menu-container">
+        <div class="menu-header">
+          <h1>🍣 Our Menu</h1>
+          <p>Authentic  American cuisine made with the finest ingredients</p>
+        </div>
+
+        <div class="menu-categories">
+          <div class="category">
+            <h2>Hamburger</h2>
+            <div class="menu-grid">
+              <div class="menu-item">
+                <div class="menu-item-image">
+                  <img
+                    src="https://www.thespruceeats.com/thmb/vf61j0CDD-RYdis4LVqmBV5NDzU%3D/1500x0/filters%3Ano_upscale%28%29%3Amax_bytes%28150000%29%3Astrip_icc%28%29/all-american-burgers-480989-hero-05-6d4542f5661c4fd6889c16a445478e0c.jpg"
+                  />
+                </div>
+
+                <div class="menu-item-content">
+                  <h3>American burgers</h3>
+                  <p>
+                   Two All‑American burgers featuring lettuce, tomato, cheese, and a soft bun.
+                  </p>
+                  <div class="menu-item-footer">
+                    <div class="price"> $2.49</div>
+                    <button
+                      class="add-to-cart-btn"
+                      onclick="addToCart('American burgers', 2.49)"
+                    >
+                      <i class="fas fa-plus"></i> Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-item-image">
+                  <img
+                    src="https://diethood.com/wp-content/uploads/2014/05/american-cheeseburger-3.jpg"
+                    alt="classic cheeseburger"
+                  />
+                </div>
+                <div class="menu-item-content">
+                  <h3>classic cheeseburger</h3>
+                  <p>A classic cheeseburger topped with melted cheese, onion, and a pickle on a clean, light background</p>
+                  <div class="menu-item-footer">
+                    <div class="price">$3.49</div>
+                    <button
+                      class="add-to-cart-btn"
+                      onclick="addToCart('classic cheeseburger', 3.49)"
+                    >
+                      <i class="fas fa-plus"></i> Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-item-image">
+                  <img
+                    src="https://cookingformysoul.com/wp-content/uploads/2024/06/feat-best-homemade-burgers-500x500.jpg"
+                    alt="juicy burger"
+                  />
+                </div>
+                <div class="menu-item-content">
+                  <h3>juicy burger</h3>
+                  <p>A juicy burger stacked with vibrant lettuce, tomato, onion, and cheese, capturing a rustic vibe.</p>
+                  <div class="menu-item-footer">
+                    <div class="price">$9.99</div>
+                    <button
+                      class="add-to-cart-btn"
+                      onclick="addToCart('juicy burger', 9.99)"
+                    >
+                      <i class="fas fa-plus"></i> Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-item-image">
+                  <img
+                    src="https://www.campbellbrothers.co.uk/wp-content/uploads/2023/02/Classic-american-burger.jpg"
+                    alt="Dragon Roll"
+                  />
+                </div>
+                <div class="menu-item-content">
+                  <h3>gourmet-style burge</h3>
+                  <p>A gourmet-style burger with lettuce and tomato, wooden skewer top—elegant and rich in detail.</p>
+                  <div class="menu-item-footer">
+                    <div class="price">$16.99</div>
+                    <button
+                      class="add-to-cart-btn"
+                      onclick="addToCart('gourmet-style burge', 16.99)"
+                    >
+                      <i class="fas fa-plus"></i> Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<!-- --Hot Dog -- -->
+          <div class="category">
+            <h2><i class="fas fa-utensils"></i> Hot Dog </h2>
+            <div class="menu-grid">
+              <div class="menu-item">
+                <div class="menu-item-image">
+                  <img
+                    src="https://potatorolls.com/wp-content/uploads/2020/10/Basic-Hot-Dogs-960x640.jpg"
+                    alt="Classic American Hot Dog"
+                  />
+                </div>
+                <div class="menu-item-content">
+                  <h3>Classic American Hot Dog</h3>
+                  <p>A simple and timeless favorite, served with mustard and ketchup in a soft bun. Often found at ballgames, cookouts, and food trucks across America.</p>
+                  <div class="menu-item-footer">
+                    <div class="price">$8.99</div>
+                    <button
+                      class="add-to-cart-btn"
+                      onclick="addToCart('Classic American Hot Dog', 8.99)"
+                    >
+                      <i class="fas fa-plus"></i> Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-item-image">
+                  <img
+                    src="https://static01.nyt.com/images/2022/07/27/dining/27Chicagodogrex/05Chicagodogrex-jumbo.jpg?quality=75&auto=webp"
+                    alt="Chicago-Style Hot Dog
+
+"
+                  />
+                </div>
+                <div class="menu-item-content">
+                  <h3>Chicago-Style Hot Dog
+
+</h3>
+                  <p> A beef frankfurter loaded with yellow mustard, chopped onions, relish, tomato slices, pickle spears, sport peppers, and celery salt — all in a poppy seed bun. No ketchup allowed!</p>
+                  <div class="menu-item-footer">
+                    <div class="price">$10.99</div>
+                    <button
+                      class="add-to-cart-btn"
+                      onclick="addToCart('Chicago-Style Hot Dog', 10.99)"
+                    >
+                      <i class="fas fa-plus"></i> Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-item-image">
+                  <img
+                    src="https://www.seriouseats.com/thmb/48kIHfT9U24qGn-4zu0jMwxOt6g=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/SEA-best-grilled-hot-dogs-recipe-hero-02-9d245c0d43874a3da13a7228682b0dce.jpg"
+                    alt="Grilled Hot Dog"
+                  />
+                </div>
+                <div class="menu-item-content">
+                  <h3>Grilled Hot Dog</h3>
+                  <p>Juicy hot dogs grilled to perfection, giving them a smoky charred flavor. Often served plain or with minimal toppings like mustard or relish.</p>
+                  <div class="menu-item-footer">
+                    <div class="price">$12.99</div>
+                    <button
+                      class="add-to-cart-btn"
+                      onclick="addToCart('Grilled Hot Dog', 12.99)"
+                    >
+                      <i class="fas fa-plus"></i> Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h2><i class="fas fa-box"></i> Mac and Cheese</h2>
+            <div class="menu-grid">
+              <div class="menu-item">
+                <div class="menu-item-image">
+                  <img
+                    src="https://cdn.pixabay.com/photo/2024/09/03/15/47/mac-and-cheese-9019557_1280.jpg"
+                    alt="Classic Mac and Cheese"
+                  />
+                </div>
+                <div class="menu-item-content">
+                  <h3>Teriyaki Chicken Bento</h3>
+                  <p>A rich, creamy, and cheesy classic made with elbow macaroni and cheddar cheese sauce. Comfort food at its finest, loved by kids and adults alike.</p>
+                  <div class="menu-item-footer">
+                    <div class="price">$18.99</div>
+                    <button
+                      class="add-to-cart-btn"
+                      onclick="addToCart('Teriyaki Chicken Bento', 18.99)"
+                    >
+                      <i class="fas fa-plus"></i> Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-item-image">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSICutTwzt5RP7akMx4wuCIpyoFgLOCvD9ynw&s"
+                    alt="Sushi Bento"
+                  />
+                </div>
+                <div class="menu-item-content">
+                  <h3>Sushi Bento</h3>
+                  <p>Assorted sushi, tempura, and side dishes</p>
+                  <div class="menu-item-footer">
+                    <div class="price">$22.99</div>
+                    <button
+                      class="add-to-cart-btn"
+                      onclick="addToCart('Sushi Bento', 22.99)"
+                    >
+                      <i class="fas fa-plus"></i> Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<!-- -Fried Chicken- -->
+          <div class="category">
+            <h2><i class="fas fa-appetizers"></i> Fried Chicken</h2>
+            <div class="menu-grid">
+              <div class="menu-item">
+                <div class="menu-item-image">
+                  <img
+                    src="https://cdn.pixabay.com/photo/2017/05/31/02/56/food-photography-2358900_1280.jpg"
+                  />
+                </div>
+                <div class="menu-item-content">
+                  <h3> Classic Southern Fried Chicken</h3>
+                  <p>Crispy, golden-brown chicken pieces seasoned with traditional Southern spices and deep-fried to perfection. Juicy inside with a crunchy crust.</p>
+                  <div class="menu-item-footer">
+                    <div class="price">$6.99</div>
+                    <button
+                      class="add-to-cart-btn"
+                      onclick="addToCart('Classic Southern Fried Chicken', 6.99)"
+                    >
+                      <i class="fas fa-plus"></i> Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-item-image">
+                  <img
+                  src="https://media.istockphoto.com/id/2162005770/photo/spicy-korean-chicken-wings-with-sesame-seeds-and-chives.jpg?s=2048x2048&w=is&k=20&c=5SBmXZezAhkv3lIqGSdgPN540R96oq3Nh0THFyW-tSA="
+                  alt="Spicy Fried Chicken Wings" >
+                </div>
+                <div class="menu-item-content">
+                  <h3>Spicy Fried Chicken Wings</h3>
+                  <p> Hot and spicy wings with a crispy coating, often tossed in buffalo or chili sauce. Great for game days or casual snacking.</p>
+                  <div class="menu-item-footer">
+                    <div class="price">$9.99</div>
+                    <button
+                      class="add-to-cart-btn"
+                      onclick="addToCart('Spicy Fried Chicken Wings', 9.99)"
+                    >
+                      <i class="fas fa-plus"></i> Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu-item">
+                <div class="menu-item-image">
+                  <img src="https://cdn.pixabay.com/photo/2022/05/19/20/21/fried-legs-7208116_1280.jpg" alt="">
+                </div>
+                <div class="menu-item-content">
+                  <h3> Fried Chicken with Sides</h3>
+                  <p>A plate of fried chicken served alongside classic sides like fries, coleslaw, and pickles — a hearty meal favorite.</p>
+                  <div class="menu-item-footer">
+                    <div class="price">$7.99</div>
+                    <button
+                      class="add-to-cart-btn"
+                      onclick="addToCart('Fried Chicken with Sides', 7.99)"
+                    >
+                      <i class="fas fa-plus"></i> Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart-container">
+        <div class="cart-header">
+          <h2><i class="fas fa-shopping-cart"></i> Your Order</h2>
+          <p>Review and checkout your items</p>
+        </div>
+
+        <div class="cart-content">
+          <div class="delivery-info">
+            <i class="fas fa-clock"></i> Estimated delivery: 30-45 minutes
+          </div>
+
+          <div id="cart-items" class="cart-items">
+            <div class="empty-cart">
+              <i class="fas fa-shopping-basket"></i>
+              <p>Your cart is empty</p>
+              <small>Add some delicious items to get started!</small>
+            </div>
+          </div>
+
+          <div id="cart-summary" class="cart-summary" style="display: none">
+            <div class="cart-row">
+              <span>Subtotal:</span>
+              <span>$<span id="subtotal">0.00</span></span>
+            </div>
+            <div class="cart-row">
+              <span>Delivery Fee:</span>
+              <span>$2.99</span>
+            </div>
+            <div class="cart-total">
+              <span>Total:</span>
+              <span>$<span id="total-amount">0.00</span></span>
+            </div>
+            <button id="checkout-btn" class="checkout-btn">
+              <i class="fas fa-credit-card"></i>
+              Proceed to Checkout
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--notification-->
+    <div id="notification" class="notification">
+      <i class="fas fa-check-circle"></i> Item added to cart!
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+      <div class="footer-main-content">
+        <div class="footer-main-content-child">
+          <div>
+            <h3 style="color: #ffff; margin-bottom: 1rem">🌸 American cuisine</h3>
+            <p style="opacity: 0.8; line-height: 1.6">
+              Authentic American cuisine delivered to your doorstep. Fresh
+              ingredients, traditional recipes, and modern presentation.
+            </p>
+          </div>
+          <div>
+            <h4 style="color: #ffff; margin-bottom: 1rem">Quick Links</h4>
+            <ul style="list-style: none; padding: 0">
+              <li style="margin-bottom: 0.5rem">
+                <a
+                  href="#menu"
+                  style="color: white; text-decoration: none; opacity: 0.8"
+                  >Our Menu</a
+                >
+              </li>
+              <li style="margin-bottom: 0.5rem">
+                <a
+                  href="#about"
+                  style="color: white; text-decoration: none; opacity: 0.8"
+                  >About Us</a
+                >
+              </li>
+              <li style="margin-bottom: 0.5rem">
+                <a
+                  href="#contact"
+                  style="color: white; text-decoration: none; opacity: 0.8"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="color: #ffff; margin-bottom: 1rem">Contact Info</h4>
+            <p style="opacity: 0.8; margin-bottom: 0.5rem">
+              <i class="fas fa-phone"></i> +1-555-123-4567
+            </p>
+            <p style="opacity: 0.8; margin-bottom: 0.5rem">
+              <i class="fas fa-envelope"></i> info@tokyobites.shop
+            </p>
+            <p style="opacity: 0.8">
+              <i class="fas fa-map-marker-alt"></i> New York, NY
+            </p>
+          </div>
+          <div>
+            <h4 style="color: #ffff; margin-bottom: 1rem">Legal</h4>
+            <ul style="list-style: none; padding: 0">
+              <li style="margin-bottom: 0.5rem">
+                <a
+                  href="privacy-policy.html"
+                  style="color: white; text-decoration: none; opacity: 0.8"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li style="margin-bottom: 0.5rem">
+                <a
+                  href="terms-conditions.html"
+                  style="color: white; text-decoration: none; opacity: 0.8"
+                  >Terms & Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-main-content-child-2">
+          <p>
+            &copy; 2025 Tokyo Bites. All rights reserved. | Cash on Delivery
+            Only
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
